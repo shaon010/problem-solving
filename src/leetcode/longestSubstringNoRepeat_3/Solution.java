@@ -6,18 +6,21 @@ import java.util.List;
 /***
  * Accepted solution
  * BruitForce
- * Runtime: 200 ms -_-
+ * Runtime: 199 ms -_-
  */
 class Solution {
     int maxSize = 0;
-
     public int lengthOfLongestSubstring(String s) {
         int currentSize = 0;
+        String stringLeft;
         List<Character> charList = new ArrayList<>();
         for (char c: s.toCharArray()) {
             if (charList.contains(c)) {
                 maxSize =  currentSize > maxSize ? currentSize : maxSize;
-                lengthOfLongestSubstring(s.substring(s.indexOf(c) + 1));
+                stringLeft = s.substring(s.indexOf(c) + 1);
+                if (stringLeft.length() > maxSize) {
+                    lengthOfLongestSubstring(stringLeft);
+                }
                 break;
             }
             else {
