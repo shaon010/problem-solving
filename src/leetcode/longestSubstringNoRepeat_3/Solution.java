@@ -16,7 +16,7 @@ class Solution {
         List<Character> charList = new ArrayList<>();
         for (char c: s.toCharArray()) {
             if (charList.contains(c)) {
-                maxSize =  currentSize > maxSize ? currentSize : maxSize;
+                maxSize = Math.max(currentSize, maxSize);
                 stringLeft = s.substring(s.indexOf(c) + 1);
                 if (stringLeft.length() > maxSize) {
                     lengthOfLongestSubstring(stringLeft);
@@ -28,7 +28,7 @@ class Solution {
             }
             currentSize = charList.size();
         }
-        maxSize =  currentSize > maxSize ? currentSize : maxSize;
+        maxSize = Math.max(currentSize, maxSize);
         return maxSize;
     }
 
