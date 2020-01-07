@@ -1,12 +1,11 @@
 package leetcode.invertBinaryTree226;
 
 /**
- *
+ * Accepted solution
  * DFS
  * 0ms
  */
 
-//todo error
 class TreeNode {
 	int val;
 	TreeNode left;
