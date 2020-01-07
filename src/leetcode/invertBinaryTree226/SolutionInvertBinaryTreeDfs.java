@@ -1,7 +1,5 @@
 package leetcode.invertBinaryTree226;
 
-import leetcode.binaryTreeMaxDepth_104.SolutionRecursiveDfs;
-
 /**
  *
  * DFS
@@ -19,7 +17,7 @@ class TreeNode {
 public class SolutionInvertBinaryTreeDfs {
 	public TreeNode invertTree(TreeNode root) {
 		if (root != null) {
-			TreeNode temp = root.left != null ? new TreeNode(root.left.val) : null;
+			TreeNode temp = root.left;
 			root.left = root.right;
 			root.right = temp;
 			invertTree(root.left);
@@ -43,6 +41,14 @@ public class SolutionInvertBinaryTreeDfs {
 		node2.right = node5;
 		node3.left = node6;
 		node3.right = node7;
+/*
+
+				   4
+				 /   \
+				2     7
+			   / \   / \
+		      1   3 6   9
+*/
 
 		new SolutionInvertBinaryTreeDfs().invertTree(node1);
 	}
