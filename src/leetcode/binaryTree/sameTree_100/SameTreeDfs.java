@@ -1,4 +1,4 @@
-package leetcode.sameTree_100;
+package leetcode.binaryTree.sameTree_100;
 
 /**
  * Accepted solution

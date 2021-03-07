@@ -1,10 +1,9 @@
-package leetcode.twoSum_1;
+package leetcode.array.twoSum_1;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /***
  * Accepted solution

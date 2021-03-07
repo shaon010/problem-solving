@@ -1,4 +1,4 @@
-package leetcode.longestSubstringNoRepeat_3;
+package leetcode.array.slidingWindow.longestSubstringNoRepeat_3;
 
 import java.util.HashSet;
 import java.util.Set;

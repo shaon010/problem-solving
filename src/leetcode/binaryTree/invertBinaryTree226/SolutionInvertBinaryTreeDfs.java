@@ -1,4 +1,4 @@
-package leetcode.invertBinaryTree226;
+package leetcode.binaryTree.invertBinaryTree226;
 
 /**
  * Accepted solution
