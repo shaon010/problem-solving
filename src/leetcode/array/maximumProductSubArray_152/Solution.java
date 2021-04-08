@@ -1,4 +1,4 @@
-package leetcode.array.MaximumProductSubArray_152;
+package leetcode.array.maximumProductSubArray_152;
 
 /**
  * Accepted at first attempt!!
