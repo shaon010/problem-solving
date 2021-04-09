@@ -37,6 +37,22 @@ public class Solution {
         return maxNumber;
     }
 
+    /* Solution from APAS android app
+    public int maxProduct(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        int max = nums[0], min = nums[0], res = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            int preMax = max, preMin = min; // IMPORTANT: max and min need tp be stored.
+            max = Math.max(Math.max(nums[i], preMax * nums[i]), preMin * nums[i]);
+            min = Math.min(Math.min(nums[i], preMax * nums[i]), preMin * nums[i]);
+            res = Math.max(max, res);
+        }
+        return res;
+    }*/
+
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] nums1 = {2, 3, -2, 4};
