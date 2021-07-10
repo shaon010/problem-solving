@@ -39,19 +39,23 @@ class Solution {
  */
 class HashMapSolution {
     public int[] twoSum(int[] nums, int target) {
-        int[] indices = new int[2];
-        Map<Integer, Integer> trackMap = new HashMap<>(nums.length);
+        Map<Integer, Integer> indexMap = new HashMap<>();
+        int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
-            int secondNumber = target - nums[i];
-            if (trackMap.containsKey(secondNumber)) {
-                indices[0] = trackMap.get(secondNumber);
-                indices[1] = i;
+            int left = target - nums[i];
+            if (indexMap.containsKey(left)) {
+                result[0] = i;
+                result[1] = indexMap.get(left);
+                //!!IMPORTANT give a break after getting the result
                 break;
-            }
-            else {
-                trackMap.put(nums[i], i);
+            } else {
+                indexMap.put(nums[i], i);
             }
         }
-        return indices;
+        return result;
+    }
+    public static void main(String[] args) {
+        int[] checkArray = {3,3};
+        Arrays.stream(new HashMapSolution().twoSum(checkArray, 6)).forEach(System.out::println);
     }
 }
