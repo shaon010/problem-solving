@@ -1,4 +1,4 @@
-package leetcode.array.twoArrayProblem_liveperson;
+package leetcode_practice.array.twoArrayProblem_liveperson;
 
 import java.util.*;
 
