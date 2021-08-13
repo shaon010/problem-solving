@@ -1,4 +1,4 @@
-package leetcode.linkedList.addTwoNumbers_2;
+package leetcode_practice.linkedList.addTwoNumbers_2;
 
 /***
  * Accepted Solution

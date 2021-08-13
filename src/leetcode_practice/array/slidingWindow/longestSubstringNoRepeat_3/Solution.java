@@ -1,4 +1,4 @@
-package leetcode.array.slidingWindow.longestSubstringNoRepeat_3;
+package leetcode_practice.array.slidingWindow.longestSubstringNoRepeat_3;
 
 import java.util.ArrayList;
 import java.util.List;

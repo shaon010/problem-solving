@@ -1,4 +1,4 @@
-package leetcode.binaryTree.binaryTreeMaxDepth_104;
+package leetcode_practice.binaryTree.binaryTreeMaxDepth_104;
 
 /**
  * Accepted solution

@@ -1,4 +1,4 @@
-package leetcode.array.bestTimeBuySellStock_121;
+package leetcode_practice.array.bestTimeBuySellStock_121;
 
 /**
  * Accepted

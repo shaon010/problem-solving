@@ -1,4 +1,4 @@
-package leetcode.array.maximumSubArray_53;
+package leetcode_practice.array.maximumSubArray_53;
 
 /**
  * https://leetcode.com/problems/maximum-subarray/discuss/1098783/C%2B%2B-Java-Python-BEGINNER-FRIENDLY
