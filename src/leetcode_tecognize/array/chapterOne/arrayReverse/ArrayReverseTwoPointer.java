@@ -1,4 +1,4 @@
-package leetcode_tecognize.array.chapterOne;
+package leetcode_tecognize.array.chapterOne.arrayReverse;
 
 public class ArrayReverseTwoPointer {
     public char[] reverseArray(char[] charArray) {
