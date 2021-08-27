@@ -5,6 +5,12 @@ import java.util.Arrays;
 /**
  * Runtime: 1 ms faster than 79.40% of Java
  * Memory Usage: 40.2 MB, less than 83.15% of Java
+ *
+ * It took 50 minutes to solve this easy problem!
+ * I crack the solution fasts. In 10 minutes.
+ * But there is a bug in the code.
+ * I should think in the first debug view instead of
+ * debugging many times.
  */
 public class Solution {
     public int removeDuplicates(int[] nums) {
