@@ -31,6 +31,21 @@ public class Solution {
         return totalUniquesNumber;
     }
 
+    public int removeDuplicates2ms(int[] nums) {
+        int totalUniquesNumber = 0;
+        int currentNum = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            if (currentNum == nums[i]) {
+                nums[i] = Integer.MIN_VALUE;
+            } else {
+                currentNum = nums[i];
+                nums[totalUniquesNumber] = currentNum;
+                totalUniquesNumber++;
+            }
+        }
+        return totalUniquesNumber;
+    }
+
     public static void main(String[] args) {
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
         System.out.println("K: " + new Solution().removeDuplicates(nums));
