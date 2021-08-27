@@ -31,6 +31,9 @@ public class Solution {
         return totalUniquesNumber;
     }
 
+    /**
+     * Accepted solution. Not sure why it is 2MS
+     */
     public int removeDuplicates2ms(int[] nums) {
         int totalUniquesNumber = 0;
         int currentNum = Integer.MIN_VALUE;
