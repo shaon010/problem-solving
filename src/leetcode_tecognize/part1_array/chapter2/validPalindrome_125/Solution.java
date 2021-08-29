@@ -1,4 +1,4 @@
-package leetcode_tecognize.array.chapterTwo.validPalindrome_125;
+package leetcode_tecognize.part1_array.chapter2.validPalindrome_125;
 
 /**
  * Accepted 18ms

@@ -1,4 +1,4 @@
-package leetcode_tecognize.array.chapterThree.removeDuplicates_26;
+package leetcode_tecognize.part1_array.chapter3.removeDuplicates_26;
 
 import java.util.Arrays;
 

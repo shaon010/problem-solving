@@ -1,4 +1,4 @@
-package leetcode_tecognize.array.chapterOne.twoSumTwo_167;
+package leetcode_tecognize.part1_array.chapter1.twoSumTwo_167;
 
 import java.util.Arrays;
 
