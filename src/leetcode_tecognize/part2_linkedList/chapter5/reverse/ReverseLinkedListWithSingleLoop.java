@@ -55,6 +55,22 @@ public class ReverseLinkedListWithSingleLoop {
         return lastPrev;
     }
 
+    /**
+     * Leetcode - 206
+     */
+    /*public ListNode reverseList(ListNode head) {
+        ListNode lastNext;
+        ListNode lastPrev = null;
+        ListNode currentNode = head;
+        while (currentNode != null) {
+            lastNext = currentNode.next;
+            currentNode.next = lastPrev;
+            lastPrev = currentNode;
+            currentNode = lastNext;
+        }
+        return lastPrev;
+    }*/
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         Arrays.stream(new int[]{1, 2, 3, 4}).forEach(linkedList::insert);
