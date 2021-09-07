@@ -26,6 +26,22 @@ public class Solution {
         return hasCycle;
     }
 
+    /**
+     * When slow and fast distance become the length of the head, they will meet if running in a cycle.
+     */
+    public boolean hasCycleFloydsSlowAndFastPointer(LinkedList.Node head) {
+        if (head==null) return false;
+        LinkedList.Node slow = head;
+        LinkedList.Node fast = head;
+        while (fast.next!=null && fast.next.next!=null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow==fast)
+                return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         Arrays.stream(new int[]{1, 2, 3, 4}).forEach(linkedList::insert);
