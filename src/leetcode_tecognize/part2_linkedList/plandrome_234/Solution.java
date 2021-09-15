@@ -4,9 +4,7 @@ import leetcode_tecognize.part2_linkedList.chapter4.implementation.LinkedList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * This solution took a lot of times, lot of retires.
