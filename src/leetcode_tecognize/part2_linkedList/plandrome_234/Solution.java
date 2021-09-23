@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * This solution took a lot of times, lot of retires.
+ * This solution took a lot of times, lots of retires.
  * I am worried.
  *
  * Learning: Should think with more test cases and more carefully
