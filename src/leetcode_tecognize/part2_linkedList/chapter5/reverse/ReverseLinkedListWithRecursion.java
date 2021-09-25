@@ -16,11 +16,29 @@ public class ReverseLinkedListWithRecursion {
         return newHead;
     }
 
+    //I got the idea of preNode/nextNode from reverse with single loop.
+    private LinkedList.Node prevNode = null;
+
+    LinkedList.Node reverseWithRecursionAnotherWay(LinkedList.Node node) {
+        LinkedList.Node nextNode = node.next;
+        node.next = prevNode;
+        if (nextNode == null) {
+            return node;
+        }
+        prevNode = node;
+        return reverseWithRecursionAnotherWay(nextNode);
+    }
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         Arrays.stream(new int[]{1, 2, 3, 4}).forEach(linkedList::insert);
         ReverseLinkedListWithRecursion reverse = new ReverseLinkedListWithRecursion();
         LinkedList.Node newHead = reverse.reverse(linkedList.head);
         System.out.println(newHead);
+
+        LinkedList linkedList2 = new LinkedList();
+        Arrays.stream(new int[]{1, 2, 3, 4}).forEach(linkedList2::insert);
+        LinkedList.Node newHead2 = reverse.reverseWithRecursionAnotherWay(linkedList2.head);
+        System.out.println(newHead2);
     }
 }
