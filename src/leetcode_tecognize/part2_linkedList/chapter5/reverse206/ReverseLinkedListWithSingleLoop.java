@@ -1,4 +1,4 @@
-package leetcode_tecognize.part2_linkedList.chapter5.reverse;
+package leetcode_tecognize.part2_linkedList.chapter5.reverse206;
 
 import leetcode_tecognize.part2_linkedList.chapter4.implementation.LinkedList;
 
